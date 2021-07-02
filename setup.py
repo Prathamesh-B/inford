@@ -5,7 +5,7 @@ with open("./README.md", encoding="utf-8") as readme:
 
 setup(
     name="inford",
-    version="0.0.1",
+    version="1.0.0",
     author="Prathamesh Bhaleakr",
     author_email="prathameshb1704@gmail.com",
     description="Simple module for sending dsicord webhooks",
