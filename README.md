@@ -1,7 +1,9 @@
+![GitHub](https://img.shields.io/github/license/Prathamesh-B/inford)
+![PyPI](https://img.shields.io/pypi/v/inford)
 
 # inford 📬
 
-inford is a Python library for sending dsicord webhooks.
+inford is a python library for sending dsicord webhooks.
 
 ## Installation
 
@@ -23,7 +25,7 @@ web = DiscordWebhook(
     content="Lorem ipsum dolor sit",
     title="Hey!",
     color="#0099ff",
-    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras hendrerit suscipit est, sit amet maximus tellus. ",
+    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     author_name="INFORD",
     author_url="https://github.com/Prathamesh-B/inford",
     footer_text="thank you",
@@ -32,10 +34,14 @@ web = DiscordWebhook(
 web.send() #or use send=True as a parameter
 ```
 
+![Image](img/example.png "Example")
+
 ## Contributing
+
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
 
 ## License
+
 [MIT](https://choosealicense.com/licenses/mit/)

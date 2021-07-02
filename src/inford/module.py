@@ -16,7 +16,7 @@ class DiscordWebhook:
         self.footer_text = kwargs.get("footer_text")
         self.footer_icon = kwargs.get("footer_icon")
         # if kwargs.get("timestamp") == True:
-        #     timestamp = datetime.now()  # 2021-06-28T12:46:00.000Z %d/%m/%Y %H:%M:%S"
+        #     timestamp = datetime.now()  #Discord Format: 2021-06-28T12:46:00.000Z %d/%m/%Y %H:%M:%S"
         #     self.timestamp = timestamp.strftime("%Y-%m-%d")
         if kwargs.get("send") == True:
             self.send()
