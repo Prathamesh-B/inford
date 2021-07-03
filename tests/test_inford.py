@@ -31,17 +31,19 @@ class TestWebhook(unittest.TestCase):
 
     def testFull(self):
         hook = DiscordWebhook(
-            webhook_url="url",
+            webhook_url="URL",
             username="inford",
             avatar_url="https://avatars.githubusercontent.com/u/55992548?v=4",
             content="Lorem ipsum dolor sit",
             title="Hey!",
             color="#0099ff",
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras hendrerit suscipit est, sit amet maximus tellus.",
+            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             author_name="INFORD",
             author_url="https://github.com/Prathamesh-B/inford",
             footer_text="thank you",
             footer_icon="https://user-images.githubusercontent.com/5679180/79618120-0daffb80-80be-11ea-819e-d2b0fa904d07.gif",
+            image="https://avatars.githubusercontent.com/u/55992548?v=4",
+            thumbnail="https://avatars.githubusercontent.com/u/55992548?v=4",
         )
 
         exp_payload = {
@@ -58,12 +60,16 @@ class TestWebhook(unittest.TestCase):
                         "text": "thank you",
                         "icon_url": "https://user-images.githubusercontent.com/5679180/79618120-0daffb80-80be-11ea-819e-d2b0fa904d07.gif",
                     },
-                    "image": {},
-                    "thumbnail": {},
+                    "image": {
+                        "url": "https://avatars.githubusercontent.com/u/55992548?v=4"
+                    },
+                    "thumbnail": {
+                        "url": "https://avatars.githubusercontent.com/u/55992548?v=4"
+                    },
                     "fields": [],
                     "title": "Hey!",
                     "color": 39423,
-                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras hendrerit suscipit est, sit amet maximus tellus.",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                 }
             ],
         }

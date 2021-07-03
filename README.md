@@ -1,5 +1,6 @@
 ![GitHub](https://img.shields.io/github/license/Prathamesh-B/inford)
 ![PyPI](https://img.shields.io/pypi/v/inford)
+[![Tests](https://github.com/Prathamesh-B/inford/actions/workflows/python-tests.yml/badge.svg)](https://github.com/Prathamesh-B/inford/actions/workflows/python-tests.yml)
 
 # inford 📬
 
@@ -19,7 +20,7 @@ pip install inford
 from inford import DiscordWebhook
 
 web = DiscordWebhook(
-    webhook_url="url",
+    webhook_url="https://discord.com/api/webhooks/123***/abc***",
     username="inford",
     avatar_url="https://avatars.githubusercontent.com/u/55992548?v=4",
     content="Lorem ipsum dolor sit",
@@ -30,6 +31,8 @@ web = DiscordWebhook(
     author_url="https://github.com/Prathamesh-B/inford",
     footer_text="thank you",
     footer_icon="https://user-images.githubusercontent.com/5679180/79618120-0daffb80-80be-11ea-819e-d2b0fa904d07.gif",
+    image="https://avatars.githubusercontent.com/u/55992548?v=4",
+    thumbnail="https://avatars.githubusercontent.com/u/55992548?v=4",
 )
 web.send() #or use send=True as a parameter
 ```

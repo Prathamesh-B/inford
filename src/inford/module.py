@@ -13,6 +13,8 @@ class DiscordWebhook:
         self.description = kwargs.get("description")
         self.author_name = kwargs.get("author_name")
         self.author_url = kwargs.get("author_url")
+        self.image = kwargs.get("image")
+        self.thumbnail = kwargs.get("thumbnail")
         self.footer_text = kwargs.get("footer_text")
         self.footer_icon = kwargs.get("footer_icon")
         # if kwargs.get("timestamp") == True:
@@ -57,6 +59,14 @@ class DiscordWebhook:
         if self.author_url:
             embed_data = True
             embed["author"]["url"] = self.author_url
+
+        if self.image:
+            embed_data = True
+            embed["image"]["url"] = self.image
+
+        if self.thumbnail:
+            embed_data = True
+            embed["thumbnail"]["url"] = self.thumbnail
 
         if self.footer_text:
             embed_data = True
