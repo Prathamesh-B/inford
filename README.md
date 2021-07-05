@@ -39,6 +39,24 @@ web.send() #or use send=True as a parameter
 
 ![Image](img/example.png "Example")
 
+### Presets
+
+```python
+from inford import Presets
+
+web = Presets(
+    webhook_url="https://discord.com/api/webhooks/123***/AbC***",
+)
+
+web.info("Python", "Update available")
+web.error("Database", "No data found")
+web.warn("System", "Ram overload")
+web.success("Program", "Executed successfully")
+
+```
+
+![Image](img/presets_example.png "Example")
+
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
