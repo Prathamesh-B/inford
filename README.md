@@ -1,8 +1,8 @@
+# inford 📬
+
 ![GitHub](https://img.shields.io/github/license/Prathamesh-B/inford)
 ![PyPI](https://img.shields.io/pypi/v/inford)
 [![Tests](https://github.com/Prathamesh-B/inford/actions/workflows/python-tests.yml/badge.svg)](https://github.com/Prathamesh-B/inford/actions/workflows/python-tests.yml)
-
-# inford 📬
 
 inford is a python library for sending dsicord webhooks.
 
@@ -34,7 +34,7 @@ web = DiscordWebhook(
     image="https://avatars.githubusercontent.com/u/55992548?v=4",
     thumbnail="https://avatars.githubusercontent.com/u/55992548?v=4",
 )
-web.send() #or use send=True as a parameter
+web.send() #or use send=True as a Argument
 ```
 
 ![Image](img/example.png "Example")
