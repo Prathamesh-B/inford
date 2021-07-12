@@ -4,7 +4,7 @@
 ![PyPI](https://img.shields.io/pypi/v/inford)
 [![Tests](https://github.com/Prathamesh-B/inford/actions/workflows/python-tests.yml/badge.svg)](https://github.com/Prathamesh-B/inford/actions/workflows/python-tests.yml)
 
-inford is a python library for sending dsicord webhooks.
+inford is a python library for sending discord webhooks.
 
 ## Installation
 
@@ -37,7 +37,7 @@ web = DiscordWebhook(
 web.send() #or use send=True as a Argument
 ```
 
-![Image](img/example.png "Example")
+![image](img/example.png "Example")
 
 ### Presets
 
@@ -52,10 +52,9 @@ web.info("Python", "Update available")
 web.error("Database", "No data found")
 web.warn("System", "Ram overload")
 web.success("Program", "Executed successfully")
-
 ```
 
-![Image](img/presets_example.png "Example")
+![preset_img](img/presets_example.png "Preset")
 
 ## Contributing
 
